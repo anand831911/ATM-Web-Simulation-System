@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <display-name>ATM Simulation Web Application</display-name>
+
+    <!-- Servlet Definitions -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.atm.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Loginservlet</servlet-name>
+        <servlet-class>com.atm.servlet.Loginservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckBalanceServlet</servlet-name>
+        <servlet-class>com.atm.servlet.CheckBalanceServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <servlet-class>com.atm.servlet.WithdrawServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DepositServlet</servlet-name>
+        <servlet-class>com.atm.servlet.DepositServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TransferServlet</servlet-name>
+        <servlet-class>com.atm.servlet.TransferServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TransactionHistoryServlet</servlet-name>
+        <servlet-class>com.atm.servlet.TransactionHistoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.atm.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.atm.servlet.registerServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Loginservlet</servlet-name>
+        <url-pattern>/Loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckBalanceServlet</servlet-name>
+        <url-pattern>/CheckBalanceServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <url-pattern>/WithdrawServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DepositServlet</servlet-name>
+        <url-pattern>/DepositServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransferServlet</servlet-name>
+        <url-pattern>/TransferServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransactionHistoryServlet</servlet-name>
+        <url-pattern>/TransactionHistoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session Configuration -->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+</web-app>
